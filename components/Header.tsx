@@ -7,7 +7,7 @@ const notoSans = Noto_Sans({
 
 export function Header() {
   const navLinks = [
-    { href: '/post/kreditering', label: 'Kreditering' },
+    { href: '/post/introduksjon-til-apne-data', label: 'Åpne data' },
     { href: '/post/apen-kildekode-lisenser', label: 'Åpen kildekode lisenser' },
     { href: '/post/kontakt', label: 'Kontakt oss' },
     { href: 'https://opensource.org', label: 'Open Source Initiative' },
