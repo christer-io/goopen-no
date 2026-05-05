@@ -30,7 +30,7 @@ export default async function Faq() {
                   return (
                     <div key={faqa._id} className="space-y-2">
                       <Link href={`/post/${faqa.slug.current}`} className="block h-full">
-                        <SimpleCard title={faqa.title} url="" description="" tag="CC" bg="bg-white" text="text-slate-700"/>
+                        <SimpleCard title={faqa.title} url="" description="" tag="FAQ" bg="bg-white" text="text-emerald-950"/>
                       </Link>
                       
                     </div>

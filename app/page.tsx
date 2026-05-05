@@ -31,17 +31,17 @@ export default async function Home() {
        <div className=''>
         <div className="">
           <Header />
-          <Banner buttonLeft="Lær mer" buttonLeftUrl="https://ndla.no/nb/r/medie--og-informasjonskunnskap-1/skap-en-lovlig-medieproduksjon/6ce9b7697d/12823" buttonRight="" buttonRightUrl=""  titlePart1="Åpne lisenser" titlePart2="er delingskultur!"/>
+          <Banner buttonLeft="Lær mer" buttonLeftUrl="/post/apen-kildekode" buttonRight="" buttonRightUrl=""  titlePart1="Åpne lisenser" titlePart2="er delingskultur!"/>
         </div>
         <div className='bg-white'>
        <div className="mx-auto bg-white max-w-7xl pb-7">
        
        {/* listing basic intro articles on Creative Commons */}
-       <SectionHeader title="CC Introduksjon" subTitle="Kom igang med Creative Commons"/>
+       <SectionHeader title="Introduksjon" subTitle="Kom igang med Åpen kildekode og Creative Commons"/>
           <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
                 {allPosts.map((post) => (  
                     <Link key={post._id} href={`/post/${post.slug.current}`} className="block h-full">
-                    <SimpleCard title={post.title} url="" description="" tag="" bg="bg-blue-500/80" text="text-white"/>
+                    <SimpleCard title={post.title} url="" description="" tag="" bg="bg-emerald-700" text="text-white"/>
                     </Link>
                 ))}
           </div>
@@ -66,11 +66,11 @@ export default async function Home() {
         
         {/* listing FAQ */}
         <div className="mx-auto bg-white max-w-7xl pb-7">
-        <SectionHeader title="Ofte spurte spørsmål" subTitle="Kom igang med Creative Commons"/>
+        <SectionHeader title="Ofte spurte spørsmål" subTitle="Kom igang med Åpen kildekode og Creative Commons"/>
             <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
                   {faq.map((faqa) => (  
                       <Link key={faqa._id} href={`/post/${faqa.slug.current}`} className="block h-full">
-                      <SimpleCard title={faqa.title} url="" description="" tag="" bg="bg-white" text="text-slate-700"/>
+                      <SimpleCard title={faqa.title} url="" description="" tag="" bg="bg-white" text="text-emerald-950"/>
                       </Link>
                   ))}
             </div>

@@ -7,7 +7,7 @@ export function SearchButton() {
 
   return (
     <button
-      className="bg-blue-900 hover:bg-blue-900/80 text-white font-bold py-4 px-4 rounded-full disabled:opacity-50 "
+      className="bg-emerald-800 hover:bg-emerald-700 text-white font-bold py-4 px-4 rounded-full disabled:opacity-50 "
       aria-label="Search button"
     >
       {pending && "Searching..."}

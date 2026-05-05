@@ -10,10 +10,10 @@ export function ExternalLink({title, url, description}: Props) {
 
   return (
             
-            <div className="border text-slate-700 hover:text-blue-600 border-gray-200 rounded-lg group cursor-pointer overflow-hidden">
+            <div className="border text-slate-700 hover:text-emerald-700 border-emerald-700/20 rounded-lg group cursor-pointer overflow-hidden">
                 <div className="flex justify-between p-3 bg-white">
                     <div>
-                      <p className="text-lg text-left text-blue-900">{title}</p> 
+                      <p className="text-lg text-left text-emerald-900">{title}</p> 
                       <p className="text-sm">{description}</p>
                     </div>
                 </div>

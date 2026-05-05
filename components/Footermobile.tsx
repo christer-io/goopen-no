@@ -17,7 +17,7 @@ export function Footermobile() {
           <Link href="/">
             <div className="">
               <div className="flex justify-center">
-                <HomeIcon className="h-6 fill-blue-900 " />
+                <HomeIcon className="h-6 fill-emerald-900 " />
               </div>
               <div className="flex justify-center">
                 <h3 className="text-xs font-light">Home</h3>
@@ -27,7 +27,7 @@ export function Footermobile() {
           <Link href="/search/o">
             <div className="">
               <div className="flex justify-center">
-                <SearchIcon className="h-6 fill-blue-900 " />
+                <SearchIcon className="h-6 fill-emerald-900 " />
               </div>
               <div className="flex justify-center">
                 <h3 className="text-xs font-light">Search FAQ</h3>
@@ -38,7 +38,7 @@ export function Footermobile() {
           <Link href="/resources/">
             <div className="">
               <div className="flex justify-center">
-                <DocumentTextIcon className=" h-6 fill-blue-900 " />
+                <DocumentTextIcon className=" h-6 fill-emerald-900 " />
               </div>
               <div className="flex justify-center">
                 <h3 className="text-xs font-light">Resources</h3>

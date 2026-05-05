@@ -28,18 +28,18 @@ export function PathStarter({
           />
           <h1 className="pb-3 text-2xl pt-6 font-extrabold tracking-tight leading-none text-black md:text-3xl lg:text-4xl pl-10 pr-10">
             {" "}
-            <span className="text-blue-900">{titlePart1}</span>{" "}
+            <span className="text-emerald-900">{titlePart1}</span>{" "}
           </h1>
 
           <p className="pb-3 max-w-2xl text-black">{description}</p>
           <p className="pb-3 max-w-3xl text-black text-xl">
-            May the <span className="text-blue-900">Open Source</span> be with
+            May the <span className="text-emerald-900">Open Source</span> be with
             you!
           </p>
           <div className="pb-20 pt-2 flex flex-col space-y-4  md:justify-center  ">
             <a
               href={buttonUrl}
-              className=" inline-flex border border-white justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-900 hover:bg-blue/80  "
+              className=" inline-flex border border-white justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-emerald-800 hover:bg-emerald-700  "
             >
               {button}
               <svg

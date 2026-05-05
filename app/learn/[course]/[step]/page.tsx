@@ -92,7 +92,7 @@ export default async function LearningStepPage({ params }: Props) {
                 a: ({ children, href }) => (
                   <a
                     href={href}
-                    className="text-blue-700 underline underline-offset-2 hover:text-blue-800"
+                    className="text-emerald-700 underline underline-offset-2 hover:text-emerald-800"
                   >
                     {children}
                   </a>
@@ -124,7 +124,7 @@ export default async function LearningStepPage({ params }: Props) {
           {nextStep ? (
             <Link
               href={`/learn/${course}/${nextStep.slug}`}
-              className="rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+              className="rounded-full bg-emerald-700 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-800"
             >
               Next
             </Link>

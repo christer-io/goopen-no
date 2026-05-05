@@ -85,8 +85,8 @@ export function Banner({
           </a>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-slate-700 md:text-5xl lg:text-7xl dark:text-white pl-10 pr-10 pt-7">
             {" "}
-            <span className="text-blue-600/80">{titlePart1}</span>{" "}
-            <span className="text-gray-800/80">{titlePart2}</span>{" "}
+            <span className="text-emerald-700">{titlePart1}</span>{" "}
+            <span className="text-emerald-950">{titlePart2}</span>{" "}
           </h1>
           <p className="mb-8 text-lg font-normal lg:text-xl sm:px-16 xl:px-48 text-slate-700 pl-10 pr-10">
             GoOpen.no bidrar til informasjon og åpen kildekode, åpne data og delingskultur.
@@ -96,7 +96,7 @@ export function Banner({
               {showLeftButton && (
                 <BannerActionLink
                   href={buttonLeftUrl}
-                  className="inline-flex border border-blue-500 justify-center items-center py-3 px-5 text-black font-medium text-center bg-white rounded-lg bg-blue/80 hover:bg-blue/80 focus:ring-4 focus:bg-blue-500 "
+                  className="inline-flex border border-emerald-700 justify-center items-center py-3 px-5 text-emerald-950 font-medium text-center bg-white rounded-lg hover:bg-emerald-50 focus:ring-4 focus:bg-emerald-100 "
                 >
                   {buttonLeft}
                   <svg
@@ -116,7 +116,7 @@ export function Banner({
               {showRightButton && (
                 <BannerActionLink
                   href={buttonRightUrl}
-                  className="inline-flex justify-center items-center py-3 px-5 text-black font-medium text-center text-gray-900 rounded-lg border border-blue-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 border-gray-700 hover: bg-white "
+                  className="inline-flex justify-center items-center py-3 px-5 font-medium text-center text-emerald-950 rounded-lg border border-emerald-700 hover:bg-emerald-50 focus:ring-4 focus:ring-emerald-100 "
                 >
                   <SearchIcon className="h-6 w-6 pr-1" />
                   {buttonRight}

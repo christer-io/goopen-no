@@ -1,5 +1,5 @@
 {
-  "name": "creativecommons",
+  "name": "goopen-no",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -35,5 +35,8 @@
     "prettier": "^3.8.1",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "^8.5.14"
   }
 }

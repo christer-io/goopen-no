@@ -20,12 +20,12 @@ export function Header() {
           <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
             <a href="/" className="flex items-center">
               <span
-                className={`${notoSans.className} self-center whitespace-nowrap text-xl font-medium text-[#4D8FE4]`}
+                className={`${notoSans.className} self-center whitespace-nowrap text-xl font-medium text-emerald-700`}
               >
                 Go
               </span>
               <span
-                className={`${notoSans.className} self-center whitespace-nowrap text-xl font-medium text-slate-700`}
+                className={`${notoSans.className} self-center whitespace-nowrap text-xl font-medium text-emerald-950`}
               >
                 {' '}
                 Open.no
@@ -35,7 +35,7 @@ export function Header() {
             <div className="flex items-center lg:order-2">
               <a
                 href="/"
-                className="mr-2 rounded-lg px-4 py-2 text-base font-medium text-slate-700 focus:outline-none focus:ring-gray-800 lg:px-5 lg:py-2.5"
+                className="mr-2 rounded-lg px-4 py-2 text-base font-medium text-emerald-950 focus:outline-none focus:ring-emerald-800 lg:px-5 lg:py-2.5"
               ></a>
             </div>
 
@@ -48,7 +48,7 @@ export function Header() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="block rounded px-3 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900 lg:p-0 lg:hover:bg-transparent"
+                      className="block rounded px-3 py-2 text-sm text-emerald-950 transition-colors hover:bg-emerald-50 hover:text-emerald-700 lg:p-0 lg:hover:bg-transparent"
                     >
                       {link.label}
                     </a>

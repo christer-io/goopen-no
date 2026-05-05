@@ -27,7 +27,7 @@ export function FooterPath({ next, back }: FooterPathProps) {
           <Link href="/">
             <div className="">
               <div className="flex justify-center">
-                <HomeIcon className="h-6 fill-blue-900 " />
+                <HomeIcon className="h-6 fill-emerald-900 " />
               </div>
               <div className="flex justify-center">
                 <h3 className="text-xs font-light">Home</h3>
