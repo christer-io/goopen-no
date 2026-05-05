@@ -6,9 +6,9 @@ slug: "gjort-med-creative-commons"
 posttype: ["external"]
 tag: "external"
 organization: "Creative Commons"
+category: "rapport"
 url: "https://www.lulu.com/shop/paul-stacey-and-sarah-hinchliff-pearson-and-bryan-mathers-and-ryan-merkley/gjort-med-creative-commons/paperback/product-m5jy75.html?page=1&pageSize=4"
 mainImage: ""
 source: ""
 license: ""
 ---
-

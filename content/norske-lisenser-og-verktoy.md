@@ -1,6 +1,6 @@
 ---
 id: a4d90c89-4bdd-4267-8a19-bdd7c574d6bb
-title: Norske lisenser og verktøy
+title: CC lisenser og verktøy
 description: Lisenstekstene på norsk for versjon 4.0
 slug: norske-lisenser-og-verktoy
 posttype:

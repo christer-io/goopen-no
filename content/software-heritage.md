@@ -6,9 +6,9 @@ slug: "software-heritage"
 posttype: ["external"]
 tag: "external"
 organization: "Software Heritage"
+category: "organisasjon"
 url: "https://www.softwareheritage.org/"
 mainImage: ""
 source: ""
 license: ""
 ---
-

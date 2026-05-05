@@ -6,9 +6,9 @@ slug: "paradox-of-open"
 posttype: ["external"]
 tag: "external"
 organization: "Open Future"
+category: "rapport"
 url: "https://paradox.openfuture.eu/"
 mainImage: ""
 source: ""
 license: ""
 ---
-

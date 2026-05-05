@@ -6,9 +6,9 @@ slug: "open-knowledge-foundation"
 posttype: ["external"]
 tag: "external"
 organization: "Open Knowledge Foundation"
+category: "organisasjon"
 url: "https://okfn.org/"
 mainImage: ""
 source: ""
 license: ""
 ---
-

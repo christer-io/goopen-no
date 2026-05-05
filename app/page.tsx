@@ -16,6 +16,8 @@ import { Hero } from '@/components/Hero';
 import { BannerSmall } from '@/components/BannerSmall';
 import { ImgCard } from "@/components/ImgCard";
 import { ExternalLink } from "@/components/ExternalLink";
+import { SoftwareCard } from "@/components/SoftwareCard";
+import { softwareItems } from "@/data/software";
 
 export default async function Home() {
   /* fetching data from serverside */
@@ -27,6 +29,9 @@ export default async function Home() {
   const externalLinks = await fetchExternalLinks();
   const frontpageFaq = faq.slice(0, 9);
   const frontpageExternalLinks = externalLinks.slice(0, 6);
+  const featuredSoftware = softwareItems
+    .filter((software) => software.tags?.includes("Featured"))
+    .slice(0, 6);
   
 
   return (
@@ -83,6 +88,18 @@ export default async function Home() {
         <div className='pb-7'>
           <ReadMore title="Flere FAQs" url="/faq/" />
         </div>
+
+        <div className="mx-auto bg-white max-w-7xl pb-7">
+        <SectionHeader title="Utvalgt programvare" subTitle="Åpne verktøy og rammeverk du kan utforske videre"/>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 ">
+                  {featuredSoftware.map((software) => (
+                      <SoftwareCard key={software.id} software={software} />
+                  ))}
+            </div>
+        </div>
+        <div className='pb-7'>
+          <ReadMore title="Utforsk mer programvare" url="/programvare/" />
+        </div>
         
         <div className="mx-auto bg-white max-w-7xl pb-7">
         <SectionHeader title="Eksterne ressurser" subTitle="Utvalgte veiledere, dokumenter og kunnskapskilder"/>
@@ -94,6 +111,7 @@ export default async function Home() {
                         url={externalLink.url}
                         description={externalLink.description}
                         organization={externalLink.organization}
+                        category={externalLink.category}
                       />
                   ))}
             </div>

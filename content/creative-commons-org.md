@@ -6,9 +6,9 @@ slug: "creative-commons-org"
 posttype: ["external"]
 tag: "external"
 organization: "Creative Commons"
+category: "organisasjon"
 url: "https://creativecommons.org/"
 mainImage: ""
 source: ""
 license: ""
 ---
-

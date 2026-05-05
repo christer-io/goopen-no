@@ -6,9 +6,9 @@ slug: "open-source-initiative"
 posttype: ["external"]
 tag: "external"
 organization: "Open Source Initiative"
+category: "organisasjon"
 url: "https://opensource.org/"
 mainImage: ""
 source: ""
 license: ""
 ---
-

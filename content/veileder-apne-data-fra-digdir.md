@@ -6,9 +6,9 @@ slug: "veileder-apne-data-fra-digdir"
 posttype: ["external"]
 tag: "external"
 organization: "DigDir"
+category: "rapport"
 url: "https://data.norge.no/guide/veileder-apne-data/files/veileder-apne-data.pdf"
 mainImage: ""
 source: ""
 license: ""
 ---
-

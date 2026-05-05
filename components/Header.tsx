@@ -11,6 +11,7 @@ export function Header() {
     { href: '/post/introduksjon-til-apne-data', label: 'Åpne data' },
     { href: '/post/apen-kildekode-lisenser', label: 'Åpen kildekode lisenser' },
     { href: '/eksterne-ressurser', label: 'Eksterne ressurser' },
+    { href: '/programvare', label: 'Programvare' },
     { href: '/post/kontakt', label: 'Kontakt oss' },
     { href: 'https://opensource.org', label: 'Open Source Initiative' },
   ];

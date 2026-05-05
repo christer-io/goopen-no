@@ -3,8 +3,8 @@ id: "3eae2e10-14e6-4fdf-b7df-2aac705ebdad"
 title: "Verk i undervisningen"
 description: "Det er mange måter å bruke creative commons lisensierte verk på i undervisningen. "
 slug: "opphavsrett-og-bruk-av-verk-i-undervisningen"
-posttype: ["list"]
-tag: "list"
+posttype: [""]
+tag: ""
 mainImage: ""
 source: ""
 license: ""

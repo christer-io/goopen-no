@@ -1,6 +1,6 @@
 import { fetchExternalLinks } from "@/app/actions";
 import { BannerSmall } from "@/components/BannerSmall";
-import { ExternalLink } from "@/components/ExternalLink";
+import { ExternalResourcesExplorer } from "@/components/ExternalResourcesExplorer";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -16,19 +16,9 @@ export default async function ExternalResources() {
         <div className="mx-auto max-w-7xl bg-white pb-7 pt-10">
           <SectionHeader
             title="Eksterne ressurser"
-            subTitle="Utvalgte veiledere, dokumenter og kunnskapskilder"
+            subTitle="Utvalgte organisasjoner, veiledere og kunnskapskilder"
           />
-          <div className="grid grid-cols-1 gap-1.5 p-2 md:grid-cols-2 md:gap-3 md:pb-3 lg:grid-cols-3">
-            {externalLinks.map((externalLink) => (
-              <ExternalLink
-                key={externalLink._id}
-                title={externalLink.title}
-                url={externalLink.url}
-                description={externalLink.description}
-                organization={externalLink.organization}
-              />
-            ))}
-          </div>
+          <ExternalResourcesExplorer externalLinks={externalLinks} />
         </div>
 
         <BannerSmall

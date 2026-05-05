@@ -6,9 +6,9 @@ slug: "opensource-com"
 posttype: ["external"]
 tag: "external"
 organization: "Red Hat"
+category: "organisasjon"
 url: "https://opensource.com/"
 mainImage: ""
 source: ""
 license: ""
 ---
-

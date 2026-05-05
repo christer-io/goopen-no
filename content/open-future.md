@@ -6,9 +6,9 @@ slug: "open-future"
 posttype: ["external"]
 tag: "external"
 organization: "Open Future"
+category: "organisasjon"
 url: "https://openfuture.eu/"
 mainImage: ""
 source: ""
 license: ""
 ---
-

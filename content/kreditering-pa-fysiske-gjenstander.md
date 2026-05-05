@@ -3,8 +3,8 @@ id: "a29ddf4a-8c56-4853-ac85-3454394bc6f8"
 title: "Kreditering på fysiske gjenstander"
 description: "Kreative verk finnes ikke bare på nettet. Lisensene kan også brukes på fysiske objekter."
 slug: "kreditering-pa-fysiske-gjenstander"
-posttype: ["list"]
-tag: "list"
+posttype: ["faq"]
+tag: "faq"
 mainImage: ""
 source: ""
 license: ""

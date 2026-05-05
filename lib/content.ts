@@ -13,6 +13,7 @@ export type ContentPost = {
   posttype: string[];
   tag: string;
   organization: string;
+  category: string;
   url: string;
   mainImage: string;
   source: string;
@@ -48,6 +49,7 @@ function toPost(filename: string, content: string): ContentPost {
     posttype: normalizePosttype(parsed.data.posttype),
     tag: (parsed.data.tag as string) || "",
     organization: (parsed.data.organization as string) || "",
+    category: (parsed.data.category as string) || "",
     url: (parsed.data.url as string) || "",
     mainImage: (parsed.data.mainImage as string) || "",
     source: (parsed.data.source as string) || "",

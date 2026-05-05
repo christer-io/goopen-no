@@ -3,8 +3,8 @@ id: "cbcc64a3-786c-401c-809c-f9098c141009"
 title: "Hvor finner jeg Creative Commons-verk?"
 description: ""
 slug: "hvor-kan-jeg-finne-creative-commons-verk-a-bruke"
-posttype: ["faq", "list"]
-tag: "list"
+posttype: ["faq", ""]
+tag: ""
 mainImage: ""
 source: ""
 license: ""
