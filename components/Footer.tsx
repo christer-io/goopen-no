@@ -1,6 +1,6 @@
 export function Footer() {
     const signalGroupUrl =
-      "https://signal.group/#CjQKICNZFlK2RTBSgZQdtdLr8O4spTFJmtwxUvkvAO_4euIREhDdmw_dl4v_bI8jGJdENotM";
+      "https://signal.group/#CjQKIErN9ao7LN4IzRSVPvMBs3kBRIB6HpB5bW6AA4Ckq5-oEhC8wAL6suPCDdFPfnN1JyBz";
 
     return (
       <div className="bg-emerald-950 text-white  ">

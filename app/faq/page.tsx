@@ -23,7 +23,7 @@ export default async function Faq() {
        <SectionHeader title="Ofte spurte spørsmål" subTitle="Kom igang med Creative Commons"/>
           <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
                 {faq.map((faqa) => {
-                  const githubFileUrl = `https://github.com/christer-io/creativecommons/blob/main/content/${encodeURIComponent(
+                  const githubFileUrl = `https://github.com/christer-io/goopen-no/blob/main/content/${encodeURIComponent(
                     faqa.slug.current
                   )}.md`;
 

@@ -25,6 +25,8 @@ export default async function Home() {
   const story = await fetchStory();
   const licenses = await fetchLicense();
   const externalLinks = await fetchExternalLinks();
+  const frontpageFaq = faq.slice(0, 9);
+  const frontpageExternalLinks = externalLinks.slice(0, 6);
   
 
   return (
@@ -71,7 +73,7 @@ export default async function Home() {
         <div className="mx-auto bg-white max-w-7xl pb-7">
         <SectionHeader title="Ofte spurte spørsmål" subTitle="Kom igang med Åpen kildekode og Creative Commons"/>
             <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
-                  {faq.map((faqa) => (  
+                  {frontpageFaq.map((faqa) => (  
                       <Link key={faqa._id} href={`/post/${faqa.slug.current}`} className="block h-full">
                       <SimpleCard title={faqa.title} url="" description="" tag="" bg="bg-white" text="text-emerald-950"/>
                       </Link>
@@ -85,7 +87,7 @@ export default async function Home() {
         <div className="mx-auto bg-white max-w-7xl pb-7">
         <SectionHeader title="Eksterne ressurser" subTitle="Utvalgte veiledere, dokumenter og kunnskapskilder"/>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
-                  {externalLinks.map((externalLink) => (  
+                  {frontpageExternalLinks.map((externalLink) => (  
                       <ExternalLink
                         key={externalLink._id}
                         title={externalLink.title}
@@ -96,6 +98,9 @@ export default async function Home() {
                   ))}
             </div>
         </div>  
+        <div className='pb-7'>
+          <ReadMore title="Flere eksterne ressurser" url="/eksterne-ressurser/" />
+        </div>
 
           <BannerSmall textPart1="Åpne lisenser" textPart2="bidrar til" textPart3="trygg deling." />
         </div>          

@@ -19,7 +19,7 @@ export async function generateStaticParams() {
       return <div><NotFound /></div>
     }
 
-    const githubFileUrl = `https://github.com/christer-io/creativecommons/blob/main/content/${encodeURIComponent(
+    const githubFileUrl = `https://github.com/christer-io/goopen-no/blob/main/content/${encodeURIComponent(
       myPost.slug.current
     )}.md`;
 
