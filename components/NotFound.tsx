@@ -1,4 +1,5 @@
 import { Header } from "./Header";
+import Link from "next/link";
 
 export function NotFound() {
   return (
@@ -16,12 +17,12 @@ export function NotFound() {
             <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
               Beklager, vi finner ikke siden.{" "}
             </p>
-            <a
+            <Link
               href="/"
               className="inline-flex text-white bg-emerald-800 hover:bg-emerald-700 focus:ring-4 focus:outline-none focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-emerald-900 my-4"
             >
               Back to Homepage
-            </a>
+            </Link>
           </div>
         </div>
       </section>

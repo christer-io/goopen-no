@@ -52,6 +52,10 @@ export async function fetchStory () {
   return getMarkdownPostsByType("story");
 }
 
+export async function fetchExternalLinks () {
+  return getMarkdownPostsByType("external");
+}
+
 export async function fetchPostBySlug(slug: string) {
   return getMarkdownPostBySlug(slug);
 }

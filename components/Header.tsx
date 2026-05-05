@@ -1,4 +1,5 @@
 import { Noto_Sans } from 'next/font/google';
+import Link from 'next/link';
 
 const notoSans = Noto_Sans({
   subsets: ['latin'],
@@ -9,6 +10,7 @@ export function Header() {
   const navLinks = [
     { href: '/post/introduksjon-til-apne-data', label: 'Åpne data' },
     { href: '/post/apen-kildekode-lisenser', label: 'Åpen kildekode lisenser' },
+    { href: '/eksterne-ressurser', label: 'Eksterne ressurser' },
     { href: '/post/kontakt', label: 'Kontakt oss' },
     { href: 'https://opensource.org', label: 'Open Source Initiative' },
   ];
@@ -18,7 +20,7 @@ export function Header() {
       <header>
         <nav className="border-gray-200 bg-white px-4 py-3 lg:px-6">
           <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <span
                 className={`${notoSans.className} self-center whitespace-nowrap text-xl font-medium text-emerald-700`}
               >
@@ -30,13 +32,10 @@ export function Header() {
                 {' '}
                 Open.no
               </span>
-            </a>
+            </Link>
 
             <div className="flex items-center lg:order-2">
-              <a
-                href="/"
-                className="mr-2 rounded-lg px-4 py-2 text-base font-medium text-emerald-950 focus:outline-none focus:ring-emerald-800 lg:px-5 lg:py-2.5"
-              ></a>
+              <div className="mr-2 px-4 py-2 lg:px-5 lg:py-2.5"></div>
             </div>
 
             <div

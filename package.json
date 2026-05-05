@@ -1,13 +1,13 @@
 {
-  "name": "goopen-no",
+  "name": "goopen.no",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{ts,tsx,md,json,js}\" --ignore-path .prettierignore"
   },
   "dependencies": {
@@ -31,6 +31,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.56.1",
     "@typescript-eslint/parser": "^8.56.1",
+    "eslint-config-next": "^16.2.4",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.8.1",
     "tailwindcss": "^4",

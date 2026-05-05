@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: 'Go Open.no - Åpne lisenser er delingskultur',
-  description: 'Åpne lisense er delingskultur!',
+  description: 'Åpne lisenser er delingskultur!',
 }
 
 export default function RootLayout({
@@ -13,9 +13,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-      <Analytics />
+    <html lang="nb">
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }

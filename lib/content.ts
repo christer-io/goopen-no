@@ -12,6 +12,8 @@ export type ContentPost = {
   body: string;
   posttype: string[];
   tag: string;
+  organization: string;
+  url: string;
   mainImage: string;
   source: string;
   license: string;
@@ -45,6 +47,8 @@ function toPost(filename: string, content: string): ContentPost {
     body: parsed.content || "",
     posttype: normalizePosttype(parsed.data.posttype),
     tag: (parsed.data.tag as string) || "",
+    organization: (parsed.data.organization as string) || "",
+    url: (parsed.data.url as string) || "",
     mainImage: (parsed.data.mainImage as string) || "",
     source: (parsed.data.source as string) || "",
     license: (parsed.data.license as string) || "",

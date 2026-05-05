@@ -7,6 +7,7 @@ import { fetchAllPosts } from '@/app/actions';
 import { fetchFAQ } from '@/app/actions';
 import { fetchStory } from '@/app/actions';
 import { fetchLicense } from '@/app/actions';
+import { fetchExternalLinks } from '@/app/actions';
 import { SectionHeader } from "@/components/SectionHeader";
 import { Header } from "@/components/Header";
 import { ReadMore } from '@/components/ReadMore';
@@ -14,6 +15,7 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { BannerSmall } from '@/components/BannerSmall';
 import { ImgCard } from "@/components/ImgCard";
+import { ExternalLink } from "@/components/ExternalLink";
 
 export default async function Home() {
   /* fetching data from serverside */
@@ -22,6 +24,7 @@ export default async function Home() {
   const faq = await fetchFAQ();
   const story = await fetchStory();
   const licenses = await fetchLicense();
+  const externalLinks = await fetchExternalLinks();
   
 
   return (
@@ -47,9 +50,9 @@ export default async function Home() {
           </div>
         </div>
         <div className="mx-auto bg-white ">
-       
+  
       {/*hero with CC logo with link to article on a book  */}
-       <Hero title="Les booken «Gjort med Creative Commons»" textPart2="En bok om gjenbruk, deling og den digitale allmenningen." buttonText="Lær mer" url="https://www.lulu.com/shop/paul-stacey-and-sarah-hinchliff-pearson-and-bryan-mathers-and-ryan-merkley/gjort-med-creative-commons/paperback/product-m5jy75.html " img="cc-large.png" />  
+       <Hero title="Open Source Initiative" textPart2="Open Source Initiative(OSI) forvalter open source definition og listen med godkjente lisenser." buttonText="Lær mer" url="https://opensource.org" img="open-source-logo-svg-vector.svg" />  
        <div className=" max-w-full bg-white">
        
        {/* listing projects using CC */}
@@ -79,6 +82,20 @@ export default async function Home() {
           <ReadMore title="Flere FAQs" url="/faq/" />
         </div>
         
+        <div className="mx-auto bg-white max-w-7xl pb-7">
+        <SectionHeader title="Eksterne ressurser" subTitle="Utvalgte veiledere, dokumenter og kunnskapskilder"/>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
+                  {externalLinks.map((externalLink) => (  
+                      <ExternalLink
+                        key={externalLink._id}
+                        title={externalLink.title}
+                        url={externalLink.url}
+                        description={externalLink.description}
+                        organization={externalLink.organization}
+                      />
+                  ))}
+            </div>
+        </div>  
 
           <BannerSmall textPart1="Åpne lisenser" textPart2="bidrar til" textPart3="trygg deling." />
         </div>          
