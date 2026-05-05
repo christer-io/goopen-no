@@ -16,4 +16,4 @@ Creative Commons Norge.
 
 Christer Gundersen: +47 93 41 13 60
 
-[Lenke til Signal:](https://signal.group/#CjQKICNZFlK2RTBSgZQdtdLr8O4spTFJmtwxUvkvAO_4euIREhDdmw_dl4v_bI8jGJdENotM)
+[Lenke til Signal Gruppen til GooOpen](https://signal.group/#CjQKIErN9ao7LN4IzRSVPvMBs3kBRIB6HpB5bW6AA4Ckq5-oEhC8wAL6suPCDdFPfnN1JyBz)
