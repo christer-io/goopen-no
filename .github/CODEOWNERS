@@ -1,0 +1,24 @@
+# Default owner for all changes.
+* @christer-io
+
+# Editorial content, translations, and learning material.
+/content/ @christer-io
+/translate/ @christer-io
+
+# Curated data catalogs.
+/data/ @christer-io
+
+# Application code and shared utilities.
+/app/ @christer-io
+/components/ @christer-io
+/lib/ @christer-io
+/types/ @christer-io
+
+# Static assets and public media.
+/public/ @christer-io
+
+# Project documentation, licensing, and repository policy.
+/README.md @christer-io
+/README.no.md @christer-io
+/LICENSE @christer-io
+/.github/ @christer-io

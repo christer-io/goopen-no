@@ -1,6 +1,9 @@
 import { SearchIcon } from "@heroicons/react/solid";
+import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
+
+const bannerImage = "/images/lightbulb-evolution-goopen.webp";
 
 const isExternalUrl = (url = ""): boolean => /^https?:\/\//i.test(url);
 const hasText = (value = ""): boolean =>
@@ -60,10 +63,19 @@ export function Banner({
 
   return (
     <div className="pb-8">
-      <section className="bg-gray-200 pt-6">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 ">
+      <section className="relative isolate overflow-hidden bg-gray-100">
+        <Image
+          src={bannerImage}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white via-white/88 to-white/20" />
+        <div className="py-14 px-4 mx-auto max-w-screen-xl text-left lg:py-24 lg:px-12 ">
           <a
-            className="hidden sm:inline-flex justify-between  items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-white rounded-full "
+            className="hidden sm:inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-white/90 rounded-full shadow-sm"
             role="alert"
           >
             <span className="text-xs bg-green-700 rounded-full text-white px-4 py-1.5 mr-3">
@@ -83,16 +95,16 @@ export function Banner({
               ></path>
             </svg>
           </a>
-          <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-slate-700 md:text-5xl lg:text-7xl dark:text-white pl-10 pr-10 pt-7">
+          <h1 className="max-w-3xl mb-4 text-3xl font-extrabold tracking-tight leading-none text-slate-700 md:text-5xl lg:text-7xl">
             {" "}
             <span className="text-emerald-700">{titlePart1}</span>{" "}
             <span className="text-emerald-950">{titlePart2}</span>{" "}
           </h1>
-          <p className="mb-8 text-lg font-normal lg:text-xl sm:px-16 xl:px-48 text-slate-700 pl-10 pr-10">
+          <p className="mb-8 max-w-2xl text-lg font-normal lg:text-xl text-slate-700">
             GoOpen.no bidrar til informasjon om åpen kildekode, åpne data og delingskultur.
           </p>
           {showButtons && (
-            <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col mb-8 lg:mb-4 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
               {showLeftButton && (
                 <BannerActionLink
                   href={buttonLeftUrl}
