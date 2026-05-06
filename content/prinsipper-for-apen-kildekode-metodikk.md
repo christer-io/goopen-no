@@ -1,6 +1,6 @@
 ---
 id: "029250df-e9d9-41a4-88d1-81581fb1902e"
-title: "Prinsipper for åpen kildekode-metodikk"
+title: "Prinsipper for åpen utvikling"
 description: "Kort innføring i sentrale prinsipper for utvikling, samarbeid og problemløsing med åpen kildekode som metode."
 slug: "prinsipper-for-apen-kildekode-metodikk"
 posttype: ["list"]
@@ -13,6 +13,10 @@ license: ""
 # Prinsipper og metodikk for utvikling og samarbeid med åpen kildekode
 
 Åpen kildekode er mer enn en lisensmodell for programvare. Det handler også også om metodikk for samarbeid, utvikling og problemløsing. 
+
+Når flere tusen mennesker bidrar til å utvikle prosjekter som Linux og Kubernetes, er det basert på en metodikk som på mange måter manifesterer disse metodene. 
+
+Git som versjonskontrollsystem gjør det mulig å spore alle endringer, hvem som gjorde dem og hvorfor, noe som skaper full transparens og tillater kvalitetskontroll gjennom peer review før kode merges. Git er en teknisk løsning som legger til rette for å støtte opp under de åpne og kollaborative prinsippene. 
 
 Prinsippene under beskriver hvordan åpenhet, deling og deltakelse kan gjøre forbedre prosessen for design og utvikling av nye løsninger, enten man utvikler programvare eller løser andre utfordringer.
 

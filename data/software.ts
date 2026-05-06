@@ -4,6 +4,7 @@ export type SoftwareItem = {
   description: string;
   category: string;
   url: string;
+  image?: string;
   tags?: string[];
   metadata?: {
     lisens?: string;
@@ -12,6 +13,16 @@ export type SoftwareItem = {
 };
 
 export const softwareItems: SoftwareItem[] = [
+  {
+    id: "android",
+    title: "Android",
+    description: "Åpent mobiloperativsystem basert på Linux, brukt på et bredt spekter av enheter.",
+    category: "Infrastruktur og sky",
+    url: "https://source.android.com/",
+    image: "/software-logos/android.svg",
+    tags: ["Featured"],
+    metadata: { lisens: "Apache-2.0 (AOSP)" },
+  },
   {
     id: "ansible",
     title: "Ansible",
@@ -67,6 +78,7 @@ export const softwareItems: SoftwareItem[] = [
     description: "Rammeverk og SDK for å bygge moderne apper på tvers av mobil, web og desktop.",
     category: "Utviklerverktøy",
     url: "https://flutter.dev/",
+    image: "/software-logos/flutter.svg",
     tags: ["Featured"],
     metadata: { lisens: "BSD-3-Clause" },
   },
@@ -85,6 +97,16 @@ export const softwareItems: SoftwareItem[] = [
     category: "Utviklerverktøy",
     url: "https://genezio.com/",
     metadata: { lisens: "MIT" },
+  },
+  {
+    id: "go",
+    title: "Go",
+    description: "Programmeringsspråk utviklet for enkelhet, høy ytelse og robuste backend-tjenester.",
+    category: "Utviklerverktøy",
+    url: "https://go.dev/",
+    image: "/software-logos/go.svg",
+    tags: ["Featured"],
+    metadata: { lisens: "BSD-3-Clause" },
   },
   {
     id: "git",
@@ -301,9 +323,44 @@ export const softwareItems: SoftwareItem[] = [
     id: "mui",
     title: "MUI (Material UI)",
     description: "Populært åpent komponentbibliotek for å bygge grensesnitt basert på Material Design.",
-    category: "Utviklerverktøy",
-    url: "https://mui.com/",
+    category: "Design",
+    url: "https://mui.com/material-ui/",
     metadata: { lisens: "MIT" },
+  },
+  {
+    id: "material-design",
+    title: "Material Design - Google",
+    description: "Googles designsystem med prinsipper, komponenter og retningslinjer for moderne brukergrensesnitt.",
+    category: "Design",
+    url: "https://m3.material.io/",
+  },
+  {
+    id: "google-fonts-icons",
+    title: "Google Fonts and icons",
+    description: "Samling av åpne ikoner og skrifter som kan brukes i digitale produkter og designarbeid.",
+    category: "Design",
+    url: "https://fonts.google.com/icons",
+  },
+  {
+    id: "noun-project",
+    title: "Noun Project",
+    description: "Stor ikonbank med visuelle symboler, inkludert mange ressurser med Creative Commons-lisens.",
+    category: "Design",
+    url: "https://thenounproject.com/browse/icons/term/creative-commons-data/",
+  },
+  {
+    id: "designsystemet-digdir",
+    title: "Designsystemet - Digdir",
+    description: "Norsk designsystem fra Digdir med komponenter og retningslinjer for universelt utformede offentlige tjenester.",
+    category: "Design",
+    url: "https://designsystemet.no/no/",
+  },
+  {
+    id: "aksel-designrammeverk",
+    title: "Aksel designrammeverk",
+    description: "NAVs designrammeverk med mønstre, komponenter og anbefalinger for tilgjengelig og konsistent tjenestedesign.",
+    category: "Design",
+    url: "https://aksel.nav.no/",
   },
   {
     id: "ardour",
@@ -321,6 +378,16 @@ export const softwareItems: SoftwareItem[] = [
     url: "https://www.audacityteam.org/",
     tags: ["Featured"],
     metadata: { lisens: "GPL-2.0-or-later" },
+  },
+  {
+    id: "blender",
+    title: "Blender",
+    description: "Fri og åpen 3D-suite for modellering, animasjon, rendering, compositing og videoarbeid.",
+    category: "Andre",
+    url: "https://www.blender.org/",
+    image: "/software-logos/blender.svg",
+    tags: ["Featured"],
+    metadata: { lisens: "GPL-3.0-or-later" },
   },
 
   {
@@ -433,6 +500,8 @@ export const softwareItems: SoftwareItem[] = [
     description: "Åpent nettleserprosjekt startet av Google og grunnlaget for flere moderne nettlesere.",
     category: "Nettlesere",
     url: "https://www.chromium.org/chromium-projects/",
+    image: "/software-logos/chromium.svg",
+    tags: ["Featured"],
     metadata: { lisens: "BSD-3-Clause" },
   },
   {
@@ -1050,6 +1119,8 @@ export const softwareItems: SoftwareItem[] = [
     description: "Åpen plattform for automatisering av utrulling, skalering og administrasjon av containeriserte applikasjoner.",
     category: "Infrastruktur og sky",
     url: "https://kubernetes.io/",
+    image: "/software-logos/kubernetes.svg",
+    tags: ["Featured"],
     metadata: { lisens: "Apache-2.0" },
   },
   {
@@ -1058,6 +1129,8 @@ export const softwareItems: SoftwareItem[] = [
     description: "Åpen løsning for identitets- og tilgangstyring med støtte for SSO, OAuth 2.0 og OpenID Connect.",
     category: "Infrastruktur og sky",
     url: "https://www.keycloak.org/",
+    image: "/software-logos/keycloak.svg",
+    tags: ["Featured"],
     metadata: { lisens: "Apache-2.0" },
   },
   {
@@ -1181,11 +1254,33 @@ export const softwareItems: SoftwareItem[] = [
     metadata: { lisens: "Apache-2.0" },
   },
   {
+    id: "opensearch",
+    title: "OpenSearch",
+    description: "Åpen søke- og analyseplattform for loggdata, observabilitet og fulltekstsøk i stor skala.",
+    category: "Infrastruktur og sky",
+    url: "https://opensearch.org/",
+    image: "/software-logos/opensearch.svg",
+    tags: ["Featured"],
+    metadata: { lisens: "Apache-2.0" },
+  },
+  {
     id: "pytorch",
     title: "PyTorch",
     description: "Åpent maskinlæringsrammeverk for forskning og produksjon, kjent for dynamisk beregningsgraf.",
     category: "Infrastruktur og sky",
     url: "https://pytorch.org/",
+    image: "/software-logos/pytorch.svg",
+    tags: ["Featured"],
     metadata: { lisens: "BSD-3-Clause" },
+  },
+  {
+    id: "tensorflow",
+    title: "TensorFlow",
+    description: "Åpent rammeverk for maskinlæring og dyp læring, brukt til trening og utrulling av modeller.",
+    category: "Infrastruktur og sky",
+    url: "https://www.tensorflow.org/",
+    image: "/software-logos/tensorflow.svg",
+    tags: ["Featured"],
+    metadata: { lisens: "Apache-2.0" },
   },
 ];

@@ -1,0 +1,13 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#F3F6FB"/>
+  <path
+    d="M319 52L216 157C183 190 165 235 165 282C165 378 243 456 339 456C435 456 513 378 513 282C513 235 495 191 462 157"
+    transform="translate(0 -146)"
+    stroke="#F34A26"
+    stroke-width="44"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <circle cx="389" cy="135" r="22" fill="#F34A26"/>
+</svg>

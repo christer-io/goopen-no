@@ -1,0 +1,42 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#E6EEF9"/>
+  <g transform="translate(128 0)">
+    <path
+      d="M180 16C271 16 344 89 344 180C344 223 328 262 302 293"
+      stroke="#1A73E8"
+      stroke-width="28"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <path
+      d="M178 344C88 343 16 270 16 180C16 138 31 100 56 70"
+      stroke="#1A73E8"
+      stroke-width="28"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <path
+      d="M58 117C58 169 100 211 152 211C163 211 175 209 185 205C229 189 278 202 307 241"
+      stroke="#1A73E8"
+      stroke-width="28"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+    />
+    <path
+      d="M307 241C321 260 328 284 328 308C328 359 287 400 236 400"
+      transform="translate(0 -56)"
+      stroke="#1A73E8"
+      stroke-width="28"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <path
+      d="M348 298L387 337"
+      stroke="#1A73E8"
+      stroke-width="44"
+      stroke-linecap="round"
+      fill="none"
+    />
+  </g>
+</svg>

@@ -121,7 +121,7 @@ export function SoftwareExplorer({ software }: Props) {
       {filteredSoftware.length > 0 ? (
         <div className="grid grid-cols-1 gap-1.5 md:grid-cols-2 md:gap-3 md:pb-3 lg:grid-cols-3">
           {filteredSoftware.map((item) => (
-            <SoftwareCard key={item.id} software={item} />
+            <SoftwareCard key={item.id} software={item} variant="simple" />
           ))}
         </div>
       ) : (

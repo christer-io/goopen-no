@@ -3,8 +3,8 @@ id: "75fe3cd2-fffe-447c-b562-365dfeaced03"
 title: "Introduksjon til åpen kildekode"
 description: "En introduksjon til åpen kildekode, delingskultur, lisenser og hvordan åpen programvare skaper en digital allmenning."
 slug: "apen-kildekode"
-posttype: ["list"]
-tag: "list"
+posttype: [""]
+tag: ""
 author: "Christer Gundersen"
 mainImage: ""
 source: ""

@@ -1,0 +1,7 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#CFE9D6"/>
+  <path d="M96 162H180" stroke="#2AB8B0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M82 176H176" stroke="#2AB8B0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M122 190H206" stroke="#2AB8B0" stroke-width="10" stroke-linecap="round"/>
+  <text x="338" y="230" text-anchor="middle" fill="#23B7B1" font-family="Arial, sans-serif" font-size="168" font-weight="700">GO</text>
+</svg>

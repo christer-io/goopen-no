@@ -28,11 +28,17 @@ export default async function Home() {
   const story = await fetchStory();
   const licenses = await fetchLicense();
   const externalLinks = await fetchExternalLinks();
+  const introPinnedSlug = "introduksjon-apne-standarder";
+  const allPostsOrdered = [
+    ...allPosts.filter((post) => post.slug.current === introPinnedSlug),
+    ...allPosts.filter((post) => post.slug.current !== introPinnedSlug),
+  ];
   const frontpageFaq = faq.slice(0, 9);
   const frontpageExternalLinks = externalLinks.slice(0, 6);
-  const featuredSoftware = softwareItems
-    .filter((software) => software.tags?.includes("Featured"))
-    .slice(0, 6);
+  const featuredSoftwareOrder = ["android", "chromium", "flutter", "go", "kubernetes", "keycloak", "opensearch", "pytorch", "tensorflow", "blender"];
+  const featuredSoftware = featuredSoftwareOrder
+    .map((id) => softwareItems.find((software) => software.id === id))
+    .filter((software): software is (typeof softwareItems)[number] => Boolean(software));
   
 
   return (
@@ -50,9 +56,9 @@ export default async function Home() {
        {/* listing basic intro articles on Creative Commons */}
        <SectionHeader title="Introduksjon" subTitle="Kom igang med Åpen kildekode og Creative Commons"/>
           <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
-                {allPosts.map((post) => (  
+                {allPostsOrdered.map((post, index) => (  
                     <Link key={post._id} href={`/post/${post.slug.current}`} className="block h-full">
-                    <SimpleCard title={post.title} url="" description="" tag="" bg="bg-emerald-700" text="text-white"/>
+                    <SimpleCard title={post.title} url="" description="" tag="" bg="bg-emerald-700" text="text-white" iconIndex={index}/>
                     </Link>
                 ))}
           </div>
@@ -92,7 +98,7 @@ export default async function Home() {
 
         <div className="mx-auto bg-white max-w-7xl pb-7">
         <SectionHeader title="Utvalgt programvare" subTitle="Åpne verktøy og rammeverk du kan utforske videre"/>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 ">
+          <div className="flex gap-3 overflow-x-auto px-2 pb-3 md:gap-4 md:pb-4 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-emerald-300 [&::-webkit-scrollbar-track]:bg-emerald-50">
                   {featuredSoftware.map((software) => (
                       <SoftwareCard key={software.id} software={software} />
                   ))}

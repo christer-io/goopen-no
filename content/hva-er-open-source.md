@@ -98,6 +98,12 @@ Derfor brukes open source-prinsipper også innen forskning, utdanning, offentlig
 
 ## Kilder og lisens
 
-Denne teksten er en norsk oversettelse og bearbeidelse av «What is open source?» på Opensource.com.
+Deler av denne teksten er en norsk oversettelse og bearbeidelse av «What is open source?» på Opensource.com.
 
 Originalteksten er lisensiert under [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). Denne oversettelsen deles på samme vilkår.
+
+Deler av teksten er kopiert og bearbeidet fra[NDLA](https://ndla.no/r/brukerstotte-im-itk-vg2/programvarelisenser/2fb6be34eb): 
+
+Originalteksten fra NDLA er forfattet av Tron Bårdgård og lisensiert under [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). Denne oversettelsen deles på samme vilkår.
+
+

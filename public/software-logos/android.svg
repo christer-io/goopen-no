@@ -1,0 +1,9 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#CFE9D6"/>
+  <path d="M190 210C190 152 236 106 294 106H346C404 106 450 152 450 210H190Z" fill="#3DDC84"/>
+  <rect x="228" y="156" width="26" height="26" rx="13" fill="#CFE9D6"/>
+  <rect x="386" y="156" width="26" height="26" rx="13" fill="#CFE9D6"/>
+  <path d="M248 112L228 76" stroke="#3DDC84" stroke-width="8" stroke-linecap="round"/>
+  <path d="M392 112L412 76" stroke="#3DDC84" stroke-width="8" stroke-linecap="round"/>
+  <text x="320" y="292" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="72" font-weight="700">android</text>
+</svg>

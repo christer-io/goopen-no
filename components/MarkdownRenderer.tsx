@@ -21,6 +21,7 @@ export function MarkdownRenderer({ markdown }: Props) {
         img: ({ src, alt }) => {
           const imageSrc = typeof src === "string" ? src : "";
           const isLicenseBadge = imageSrc.includes("/images/cc-license-");
+          const isScrewImage = imageSrc.includes("/images/gjenget-mutter-og-skrue-ndla.jpg");
 
           return (
             <Image
@@ -32,7 +33,9 @@ export function MarkdownRenderer({ markdown }: Props) {
               className={
                 isLicenseBadge
                   ? "my-3 h-auto w-full max-w-sm rounded-none shadow-none"
-                  : "my-8 aspect-[3/2] w-full rounded-lg object-cover shadow-sm"
+                  : isScrewImage
+                    ? "my-8 aspect-[3/1] w-full rounded-lg bg-slate-100 object-contain shadow-sm"
+                    : "my-8 aspect-[3/2] w-full rounded-lg object-cover shadow-sm"
               }
             />
           );
