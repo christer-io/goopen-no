@@ -48,7 +48,7 @@ export default async function Home() {
        <div className=''>
         <div className="">
           <Header />
-          <Banner buttonLeft="Lær mer" buttonLeftUrl="/post/apen-kildekode" buttonRight="" buttonRightUrl=""  titlePart1="Åpne lisenser" titlePart2="er delingskultur!"/>
+          <Banner buttonLeft="Les mer" buttonLeftUrl="/post/om-goopen-no" buttonRight="" buttonRightUrl=""  titlePart1="Åpne lisenser" titlePart2="er delingskultur!"/>
         </div>
         <div className='bg-white'>
        <div className="mx-auto bg-white max-w-7xl pb-7">
