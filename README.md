@@ -1,156 +1,241 @@
-# Creative Commons Norway Site
+# GoOpen.no
 
-This repository contains the Creative Commons Norway website, built with Next.js, Tailwind CSS, and Markdown content files.
+GoOpen.no is a Norwegian knowledge site for open source, Creative Commons, open licensing, open standards, and practical participation in open communities.
+
+The site combines Markdown-based articles and FAQs with curated external resources, a searchable software catalog, and simple entry points for contributing through GitHub and discussion in Signal.
+
+## What The Site Contains
+
+- Introductory articles about open source, Creative Commons, open data, licensing, attribution, and open collaboration.
+- FAQ pages generated from Markdown files.
+- External resources such as organizations, reports, guides, and knowledge sources.
+- A searchable software catalog at `/programvare`.
+- Front page sections for featured articles, featured software, external resources, and community participation.
+- Links for editing content on GitHub from generated content pages.
+
+## Main Routes
+
+- `/`: front page with introductions, FAQs, featured software, external resources, and community links.
+- `/faq`: overview of FAQ content.
+- `/eksterne-ressurser`: searchable and filterable list of external resources.
+- `/programvare`: searchable and filterable catalog of open software and applications.
+- `/post/<slug>`: generated article or FAQ page from `content/*.md`.
+- `/ressurs/<slug>`: generated resource view for content items that use `source`.
 
 ## Stack Overview
 
-- Next.js (App Router): page routing, server rendering, and static generation.
-- React: component-based UI.
-- Tailwind CSS v4: utility-first styling from `app/globals.css` and utility classes in components.
-- Markdown content: stored in `content/*.md`, parsed with `gray-matter`, rendered with `react-markdown` + `remark-gfm`.
+- Next.js App Router for routing, server rendering, and static generation.
+- React for component-based UI.
+- Tailwind CSS v4 for layout and styling.
+- MUI for search and filter controls.
+- Markdown content in `content/*.md`.
+- `gray-matter` for frontmatter parsing.
+- `react-markdown` and `remark-gfm` for Markdown rendering.
 
 ## Project Structure
 
 - `app/`: route files and page composition.
 - `components/`: reusable UI components.
 - `content/`: Markdown content files with frontmatter metadata.
-- `lib/content.ts`: content loading/parsing and filtering utilities.
+- `data/software.ts`: curated software catalog used by `/programvare` and the front page.
+- `data/licenses.js`: license data.
+- `lib/content.ts`: content loading, parsing, sorting, and filtering utilities.
 - `app/actions.ts`: server-side helpers that return grouped content for pages.
+- `public/`: static images and assets.
 
-## How Content Works
+## Markdown Content
 
-Markdown files in `content/` are the source of truth.
+Markdown files in `content/` are the source of truth for articles, FAQs, and external resources.
 
-The loader in `lib/content.ts`:
-- reads all `.md` files,
-- parses frontmatter,
-- maps fields into the `ContentPost` shape,
-- sorts posts by title.
-
-Each content file supports these frontmatter fields:
+Each file uses frontmatter metadata:
 
 ```yaml
 ---
 id: unique-id
-slug: unique-url-slug
-title: Post title
-description: Optional summary
-posttype:
-  - front
-tag: front
-mainImage: /images/example.png
-source: ''
-license: ''
+title: "Title"
+description: "Short summary"
+slug: "url-slug"
+posttype: ["list"]
+tag: "list"
+author: "Author name"
+organization: "Organization name"
+category: "organisasjon"
+url: "https://example.org/"
+mainImage: ""
+source: ""
+license: ""
 ---
 ```
 
-### Field Behavior
+Common field behavior:
 
-- `slug`: controls URL path.
-- `posttype` and `tag`: used for grouping content in sections (`front`, `list`, `faq`, `story`).
-- `source`: if set to a URL, the same content item is also available in the resource iframe route.
-- `mainImage`, `license`, `description`: optional metadata used by cards/components.
+- `slug`: controls the generated URL.
+- `posttype` and `tag`: place content in sections such as `list`, `faq`, `external`, or `story`.
+- `description`: shown in cards and previews.
+- `category`: used for filtering external resources.
+- `organization`: shown on external resource cards.
+- `url`: target URL for external resource cards.
+- `source`: enables `/ressurs/<slug>` generation for source-based resource pages.
+- `license`: records reuse/license metadata for content.
 
-## Routing and Build/Deploy Behavior
+## Content Groups
 
-### 1) Standard content pages
+`app/actions.ts` maps Markdown files into page sections:
 
-Route: `app/post/[id]/page.tsx`
+- `fetchAllPosts()` -> `posttype` or `tag` includes `list`.
+- `fetchFAQ()` -> `posttype` or `tag` includes `faq`.
+- `fetchStory()` -> `posttype` or `tag` includes `story`.
+- `fetchExternalLinks()` -> `posttype` or `tag` includes `external`.
 
-- `generateStaticParams()` reads all Markdown slugs.
-- On build/deploy, Next.js statically generates one page per slug:
-  - `content/kreditering.md` -> `/post/kreditering`
-  - `content/norske-lisenser-og-verktoy.md` -> `/post/norske-lisenser-og-verktoy`
+Changing `posttype`, `tag`, or `category` changes where content appears after rebuild.
 
-### 2) Resource pages (iframe)
+## External Resources
 
-Route: `app/ressurs/[id]/page.tsx`
+External resources live in `content/*.md` with:
 
-- Only posts with a non-empty `source` value are included.
-- On build/deploy, those slugs also get a resource page:
-  - `content/example.md` with `source: https://...` -> `/ressurs/example`
-
-### 3) Home and FAQ content sections
-
-`app/actions.ts` maps content into sections:
-
-- `fetchPosts()` -> `posttype`/`tag` = `front`
-- `fetchAllPosts()` -> `posttype`/`tag` = `list`
-- `fetchFAQ()` -> `posttype`/`tag` = `faq`
-- `fetchStory()` -> `posttype`/`tag` = `story`
-
-This means adding or changing `posttype`/`tag` in a Markdown file changes where it appears in the UI after deploy.
-
-## Add New Content
-
-1. Create a new Markdown file in `content/`, for example:
-   - `content/min-nye-artikkel.md`
-2. Add required frontmatter (`id`, `slug`, `title`) and optional metadata.
-3. Set `posttype`/`tag` to place it in the correct content section.
-4. Add body content in Markdown.
-5. Commit and deploy.
-
-After deploy:
-- The article is generated at `/post/<slug>` automatically.
-- If `source` has a URL, `/ressurs/<slug>` is also generated.
-
-## First-Time Setup (After Downloading/Cloning)
-
-Use this sequence on a new computer:
-
-1. Install Node.js 20+ (LTS recommended).
-2. Clone the repository and open it in your terminal:
-
-```bash
-git clone <repo-url>
-cd creativecommons
+```yaml
+posttype: ["external"]
+tag: "external"
+category: "organisasjon"
+url: "https://example.org/"
 ```
 
-3. Install dependencies:
+The `/eksterne-ressurser` page uses `components/ExternalResourcesExplorer.tsx` to provide:
+
+- full text search across title, organization, description, and category,
+- category filtering,
+- responsive resource cards.
+
+Current intended categories include organizations, reports, and guides. Applications/software should be added to `data/software.ts` instead.
+
+## Software Catalog
+
+The software catalog is maintained in `data/software.ts`.
+
+Each software item has this shape:
+
+```ts
+{
+  id: "next-js",
+  title: "Next.js",
+  description: "Norwegian description",
+  category: "Utviklerverktøy",
+  url: "https://nextjs.org/",
+  tags: ["Featured"],
+  metadata: { lisens: "MIT" },
+}
+```
+
+The `/programvare` page uses `components/SoftwareExplorer.tsx` to provide:
+
+- full-width search,
+- category filters on a separate horizontal line,
+- full text search across title, description, and category,
+- responsive software cards.
+
+The front page shows the first six software items tagged with `Featured`.
+
+Current software categories include:
+
+- `Utviklerverktøy`
+- `Lydverktøy`
+- `Sosiale medier`
+- `Nettlesere`
+
+## Add A New Article Or FAQ
+
+1. Create a Markdown file in `content/`.
+2. Add `id`, `title`, `slug`, `description`, `posttype`, and `tag`.
+3. Write the body in Markdown.
+4. Use `posttype: ["faq"]` for FAQ content.
+5. Use `posttype: ["list"]` for regular article/list content.
+
+After build, the page is generated at:
+
+```text
+/post/<slug>
+```
+
+## Add A New External Resource
+
+1. Create a Markdown file in `content/`.
+2. Use `posttype: ["external"]` and `tag: "external"`.
+3. Set `category`, `organization`, `url`, `title`, and `description`.
+4. Keep descriptions in Norwegian.
+
+The item appears automatically on:
+
+```text
+/eksterne-ressurser
+```
+
+## Add New Software
+
+1. Open `data/software.ts`.
+2. Add a new item to `softwareItems`.
+3. Use a Norwegian category and description.
+4. Add `metadata.lisens` when the license is known.
+5. Add `tags: ["Featured"]` only if it should appear on the front page.
+
+The item appears automatically on:
+
+```text
+/programvare
+```
+
+## Development Setup
+
+Use Node.js 20+.
 
 ```bash
+git clone https://github.com/christer-io/goopen-no.git
+cd goopen-no
 npm install
-```
-
-4. Start development mode:
-
-```bash
 npm run dev
 ```
 
-5. Open `http://localhost:3000`.
+Open:
 
-## Daily Development
+```text
+http://localhost:3000
+```
 
-From the project root:
+If port 3000 is already in use:
 
 ```bash
-npm run dev
+npm run dev -- -p 3001
+```
+
+## Scripts
+
+```bash
+npm run dev       # start local development server
+npm run build     # production build
+npm run start     # start production server after build
+npm run lint      # run ESLint
+npm run lint:fix  # run ESLint with automatic fixes
+npm run format    # format supported files with Prettier
 ```
 
 ## Verify Before Deploy
 
-Run a production build locally:
+Run:
 
 ```bash
+npm run lint
 npm run build
-npm run start
 ```
 
-Open `http://localhost:3000` and verify key pages.
+Then check the most important routes:
 
-## Troubleshooting
+- `/`
+- `/faq`
+- `/eksterne-ressurser`
+- `/programvare`
+- a few `/post/<slug>` pages
 
-- If `npm install` fails, check Node version with `node -v` and upgrade to Node 20+.
-- If port 3000 is in use, stop the other process or run with another port:
-  - `npm run dev -- -p 3001`
-- If Markdown changes are not visible, restart the dev server.
+## Notes
 
-## Production
-
-Build and run locally:
-
-```bash
-npm run build
-npm run start
-```
+- `README.no.md` is generated from `README.md` by the repository workflow. Update `README.md` first.
+- Some lint warnings may already exist for unused legacy imports and components.
+- Next.js may warn about multiple lockfiles if another `package-lock.json` exists above the project directory.

@@ -137,6 +137,14 @@ export const softwareItems: SoftwareItem[] = [
     metadata: { lisens: "Apache-2.0" },
   },
   {
+    id: "next-js",
+    title: "Next.js",
+    description: "Fullstack React-rammeverk fra Vercel for produksjonsklare apper med routing og server-side rendering.",
+    category: "Utviklerverktøy",
+    url: "https://nextjs.org/",
+    metadata: { lisens: "MIT" },
+  },
+  {
     id: "oh-my-zsh",
     title: "Oh My Zsh",
     description: "Fellesskapsdrevet rammeverk for å administrere og utvide Zsh-konfigurasjoner.",
@@ -175,6 +183,14 @@ export const softwareItems: SoftwareItem[] = [
     category: "Utviklerverktøy",
     url: "https://marmelab.com/react-admin/",
     tags: ["Featured"],
+    metadata: { lisens: "MIT" },
+  },
+  {
+    id: "react-native",
+    title: "React Native",
+    description: "Åpent rammeverk for å bygge native mobilapper for iOS og Android med React.",
+    category: "Utviklerverktøy",
+    url: "https://reactnative.dev/",
     metadata: { lisens: "MIT" },
   },
   {
@@ -271,6 +287,22 @@ export const softwareItems: SoftwareItem[] = [
     description: "Bibliotek for å forene React Native og Next.js, særlig rundt delt navigasjon.",
     category: "Utviklerverktøy",
     url: "https://solito.dev/",
+    metadata: { lisens: "MIT" },
+  },
+  {
+    id: "tanstack-query",
+    title: "TanStack Query",
+    description: "Kraftig bibliotek for datahenting, caching og server state-håndtering i webapplikasjoner.",
+    category: "Utviklerverktøy",
+    url: "https://tanstack.com/query/",
+    metadata: { lisens: "MIT" },
+  },
+  {
+    id: "mui",
+    title: "MUI (Material UI)",
+    description: "Populært åpent komponentbibliotek for å bygge grensesnitt basert på Material Design.",
+    category: "Utviklerverktøy",
+    url: "https://mui.com/",
     metadata: { lisens: "MIT" },
   },
   {
@@ -402,14 +434,6 @@ export const softwareItems: SoftwareItem[] = [
     category: "Nettlesere",
     url: "https://www.chromium.org/chromium-projects/",
     metadata: { lisens: "BSD-3-Clause" },
-  },
-  {
-    id: "falkon",
-    title: "Falkon",
-    description: "Lett nettleser på tvers av plattformer, skrevet med Qt og QtWebEngine.",
-    category: "Nettlesere",
-    url: "https://www.falkon.org/",
-    metadata: { lisens: "GPL-3.0-or-later" },
   },
   {
     id: "midori",

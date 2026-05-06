@@ -16,6 +16,7 @@ import { Hero } from '@/components/Hero';
 import { BannerSmall } from '@/components/BannerSmall';
 import { ImgCard } from "@/components/ImgCard";
 import { ExternalLink } from "@/components/ExternalLink";
+import { ExploreCommunity } from "@/components/ExploreCommunity";
 import { SoftwareCard } from "@/components/SoftwareCard";
 import { softwareItems } from "@/data/software";
 
@@ -119,6 +120,8 @@ export default async function Home() {
         <div className='pb-7'>
           <ReadMore title="Flere eksterne ressurser" url="/eksterne-ressurser/" />
         </div>
+
+          <ExploreCommunity />
 
           <BannerSmall textPart1="Åpne lisenser" textPart2="bidrar til" textPart3="trygg deling." />
         </div>          

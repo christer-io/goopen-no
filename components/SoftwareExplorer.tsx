@@ -50,10 +50,10 @@ export function SoftwareExplorer({ software }: Props) {
   return (
     <div className="px-2">
       <Stack
-        direction={{ xs: "column", md: "row" }}
+        direction="column"
         spacing={1.5}
         sx={{
-          alignItems: { xs: "stretch", md: "center" },
+          alignItems: "stretch",
           mb: 2,
         }}
       >
@@ -73,7 +73,6 @@ export function SoftwareExplorer({ software }: Props) {
             },
           }}
           sx={{
-            maxWidth: { md: 420 },
             "& .MuiOutlinedInput-root.Mui-focused fieldset": {
               borderColor: "#047857",
             },
@@ -83,7 +82,7 @@ export function SoftwareExplorer({ software }: Props) {
           }}
         />
 
-        <Box sx={{ overflowX: "auto", pb: 0.25 }}>
+        <Box sx={{ overflowX: "auto", pb: 0.25, width: "100%" }}>
           <ToggleButtonGroup
             exclusive
             value={category}

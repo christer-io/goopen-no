@@ -3,8 +3,8 @@ id: "b15a1349-ba4f-40f1-b7b7-1e653de7ee7c"
 title: "Kreditering ved offentlige fremføringer"
 description: "Ved fremføring fremstilles det verken en digital eller en fysisk kopi verket."
 slug: "kreditering-ved-offentlige-fremforinger"
-posttype: ["list"]
-tag: "list"
+posttype: [""]
+tag: ""
 mainImage: ""
 source: ""
 license: ""
