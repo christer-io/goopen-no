@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface BannerSmallProps {
   textPart1: string;
   textPart2: string;

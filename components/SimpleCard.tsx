@@ -86,7 +86,7 @@ const decorativeIcons = [
   </svg>,
 ];
 
-export function SimpleCard({title, url, description, tag, bg, text, iconIndex}: Props) {
+export function SimpleCard({title, tag, bg, text, iconIndex}: Props) {
   const icon = iconIndex !== undefined ? decorativeIcons[iconIndex % decorativeIcons.length] : null;
 
   return (

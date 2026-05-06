@@ -1,12 +1,8 @@
 import Link from "next/link";
 import {
-  MenuIcon,
   SearchIcon,
-  UserCircleIcon,
-  AcademicCapIcon,
   DocumentTextIcon,
   HomeIcon,
-  QuestionMarkCircleIcon,
 } from "@heroicons/react/solid";
 
 export function Footermobile() {

@@ -1,14 +1,5 @@
 import Link from "next/link";
-import {
-  ArrowCircleRight,
-  MenuIcon,
-  SearchIcon,
-  UserCircleIcon,
-  AcademicCapIcon,
-  DocumentTextIcon,
-  HomeIcon,
-  QuestionMarkCircleIcon,
-} from "@heroicons/react/solid";
+import { HomeIcon } from "@heroicons/react/solid";
 import { NavButton } from "@/components/NavButton";
 
 interface FooterPathProps {

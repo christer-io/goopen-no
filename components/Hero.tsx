@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button"
+import Image from "next/image";
 
 type Props = {
     title: string;
@@ -19,7 +20,7 @@ export function Hero({ title, textPart2, buttonText, url, img }: Props) {
                     <Button buttonText={buttonText} url={url}/>
                 </div>
                 <div className="hidden h-80 lg:mt-0 lg:col-span-5 lg:flex">
-                    <img src={`/${img}`} alt="mockup" />
+                    <Image src={`/${img}`} alt="" width={360} height={320} className="h-80 w-auto object-contain" />
                 </div>                
             </div>
         </section>

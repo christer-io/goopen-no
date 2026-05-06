@@ -2,11 +2,8 @@
 import { Banner } from "@/components/Banner";
 import Link from 'next/link';
 import { SimpleCard } from "@/components/SimpleCard";
-import { fetchPosts } from '@/app/actions';
 import { fetchAllPosts } from '@/app/actions';
 import { fetchFAQ } from '@/app/actions';
-import { fetchStory } from '@/app/actions';
-import { fetchLicense } from '@/app/actions';
 import { fetchExternalLinks } from '@/app/actions';
 import { SectionHeader } from "@/components/SectionHeader";
 import { Header } from "@/components/Header";
@@ -14,7 +11,6 @@ import { ReadMore } from '@/components/ReadMore';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { BannerSmall } from '@/components/BannerSmall';
-import { ImgCard } from "@/components/ImgCard";
 import { ExternalLink } from "@/components/ExternalLink";
 import { ExploreCommunity } from "@/components/ExploreCommunity";
 import { SoftwareCard } from "@/components/SoftwareCard";
@@ -22,11 +18,8 @@ import { softwareItems } from "@/data/software";
 
 export default async function Home() {
   /* fetching data from serverside */
-  const posts = await fetchPosts();
   const allPosts = await fetchAllPosts();
   const faq = await fetchFAQ();
-  const story = await fetchStory();
-  const licenses = await fetchLicense();
   const externalLinks = await fetchExternalLinks();
   const introPinnedSlug = "introduksjon-apne-standarder";
   const allPostsOrdered = [
@@ -79,8 +72,6 @@ export default async function Home() {
                 ))}
           </div>*/}
         </div>  
-        {/* adsfds */}
-        
         {/* listing FAQ */}
         <div className="mx-auto bg-white max-w-7xl pb-7">
         <SectionHeader title="Ofte spurte spørsmål" subTitle="Kom igang med Åpen kildekode og Creative Commons"/>
@@ -131,7 +122,6 @@ export default async function Home() {
 
           <BannerSmall textPart1="Åpne lisenser" textPart2="bidrar til" textPart3="trygg deling." />
         </div>          
-        {/* asdfa */}
         <Footer /> 
       </div>
       </div>
