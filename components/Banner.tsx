@@ -89,7 +89,7 @@ export function Banner({
             <span className="text-emerald-950">{titlePart2}</span>{" "}
           </h1>
           <p className="mb-8 text-lg font-normal lg:text-xl sm:px-16 xl:px-48 text-slate-700 pl-10 pr-10">
-            GoOpen.no bidrar til informasjon og åpen kildekode, åpne data og delingskultur.
+            GoOpen.no bidrar til informasjon om åpen kildekode, åpne data og delingskultur.
           </p>
           {showButtons && (
             <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
