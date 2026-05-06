@@ -12,6 +12,9 @@ license: "CC BY 4.0"
 ---
 # Introduksjon til åpne data
 
+![STANDARD skilt opplyst på nattlig vegg](/images/standard.jpg)
+Foto av [Call Me Fred](https://unsplash.com/@callmefred) på [Unsplash](https://unsplash.com/photos/white-standard-led-signage-mounted-on-wall-fJSRg-r7LuI).
+
 ## Hva er åpne data?
 
 Åpne data består av to ting: data og åpenhet. Med data mener vi informasjon som er gjort tilgjengelig slik at den kan leses og tolkes av både maskiner og mennesker. Med åpenhet mener vi at vilkårene åpner opp for så mange bruksområder som mulig.
