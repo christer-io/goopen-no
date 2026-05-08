@@ -4,7 +4,7 @@ title: "Hva er åpen kildekode-AI?"
 description: ""
 slug: "what-is-open-source-ai"
 posttype: ["faq"]
-tag: "OpenSourceAI"
+tag: "åpen KI"
 featured: ""
 source: "ObiOne"
 license: "CC-BY-4.0"

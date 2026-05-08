@@ -4,7 +4,7 @@ title: "Hvilke typer klimadata deles vanligvis som åpne data?"
 description: ""
 slug: "what-types-of-climate-data-are-commonly-shared-as-open-data"
 posttype: ["faq"]
-tag: ""
+tag: "klima og miljø"
 featured: "yes"
 source: "DigiPlanet"
 license: "CC-BY-4.0"

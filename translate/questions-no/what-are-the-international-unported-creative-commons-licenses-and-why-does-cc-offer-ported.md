@@ -1,10 +1,10 @@
 ---
 id: "1c675a1b-fd98-449a-9a63-58943918db9a"
-title: "Hva er de internasjonale ("uporterte") Creative Commons-lisensene, og hvorfor tilbyr CC "porterte" lisenser?"
+title: 'Hva er de internasjonale ("uporterte") Creative Commons-lisensene, og hvorfor tilbyr CC "porterte" lisenser?'
 description: ""
 slug: "what-are-the-international-unported-creative-commons-licenses-and-why-does-cc-offer-ported"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

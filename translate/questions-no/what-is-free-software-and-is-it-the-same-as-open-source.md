@@ -4,7 +4,7 @@ title: "Hva er \"fri programvare\" og er det det samme som \"åpen kildekode\"?"
 description: ""
 slug: "what-is-free-software-and-is-it-the-same-as-open-source"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-SA-4.0"

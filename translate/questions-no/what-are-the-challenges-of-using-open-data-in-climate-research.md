@@ -4,7 +4,7 @@ title: "Hva er utfordringene med å bruke åpne data i klimaforskningen?"
 description: ""
 slug: "what-are-the-challenges-of-using-open-data-in-climate-research"
 posttype: ["faq"]
-tag: ""
+tag: "klima og miljø"
 featured: "yes"
 source: "DigiPlanet"
 license: "CC-BY-4.0"

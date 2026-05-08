@@ -4,7 +4,7 @@ title: "Hva er en BY-SA-kompatibel lisens?"
 description: ""
 slug: "what-is-a-by-sa-compatible-license"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

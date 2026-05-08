@@ -1,4 +1,5 @@
 import type { SoftwareItem } from "@/data/software";
+import { getSoftwareCategories } from "@/data/software";
 import Image from "next/image";
 
 type Props = {
@@ -7,6 +8,8 @@ type Props = {
 };
 
 export function SoftwareCard({ software, variant = "visual" }: Props) {
+  const categories = getSoftwareCategories(software);
+
   if (variant === "simple") {
     return (
       <a
@@ -17,9 +20,16 @@ export function SoftwareCard({ software, variant = "visual" }: Props) {
       >
         <div className="h-full overflow-hidden rounded-lg border border-emerald-700/20 bg-white text-slate-700 transition-colors hover:text-emerald-700">
           <div className="p-3">
-            <p className="mb-2 inline-flex rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-800">
-              {software.category}
-            </p>
+            <div className="mb-2 flex flex-wrap gap-1.5">
+              {categories.map((category) => (
+                <span
+                  key={category}
+                  className="inline-flex rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-800"
+                >
+                  {category}
+                </span>
+              ))}
+            </div>
             <p className="text-left text-lg font-medium text-emerald-900">
               {software.title}
             </p>
@@ -56,7 +66,7 @@ export function SoftwareCard({ software, variant = "visual" }: Props) {
         </div>
         <div className="p-4">
           <p className="mb-2 inline-flex rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-900">
-            {software.category}
+            {categories[0]}
           </p>
           <p className="text-left text-lg font-semibold text-emerald-950">
             {software.title}

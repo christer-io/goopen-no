@@ -4,7 +4,7 @@ title: "Hva er Open Educational Resources (OER)?"
 description: ""
 slug: "what-are-open-educational-resources-oer"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpne læringsressurser"
 featured: ""
 source: "OER Commons"
 license: "CC-BY-4.0"

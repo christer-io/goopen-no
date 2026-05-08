@@ -4,7 +4,7 @@ title: "Hva med programvare i \"det offentlige domene\"? Er det åpen kildekode?
 description: ""
 slug: "what-about-software-in-the-public-domain-is-that-open-source"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-4.0"

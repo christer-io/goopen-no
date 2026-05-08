@@ -4,7 +4,7 @@ title: "Hva er et åpent filformat og hvorfor er det forskjellig fra et propriet
 description: ""
 slug: "what-is-an-open-file-format-and-why-is-it-different-from-a-proprietary-file-format"
 posttype: ["faq"]
-tag: "opendata"
+tag: "åpne data"
 featured: ""
 source: "Open Knowledge Foundation"
 license: "CC-BY-SA-4.0"

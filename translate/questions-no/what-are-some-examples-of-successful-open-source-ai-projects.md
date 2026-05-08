@@ -4,7 +4,7 @@ title: "Hva er noen eksempler på vellykkede åpen kildekode-AI-prosjekter?"
 description: ""
 slug: "what-are-some-examples-of-successful-open-source-ai-projects"
 posttype: ["faq"]
-tag: "OpenSourceAI"
+tag: "åpen KI"
 featured: ""
 source: "ObiOne"
 license: "CC-BY-4.0"

@@ -4,7 +4,7 @@ title: "Hvorfor er åpen kildekode viktig for klimaforskning?"
 description: ""
 slug: "why-is-open-source-important-for-climate-research"
 posttype: ["faq"]
-tag: ""
+tag: "klima og miljø"
 featured: "yes"
 source: "DigiPlanet"
 license: "CC-BY-4.0"

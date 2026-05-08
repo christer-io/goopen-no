@@ -4,7 +4,7 @@ title: "Hva er \"distribusjon\"? Hva betyr det å \"distribuere\" et program? Er
 description: ""
 slug: "what-is-distribution-what-does-it-mean-to-distribute-a-program-is-letting-people-use-it-on-my"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-4.0"

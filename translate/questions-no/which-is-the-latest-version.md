@@ -4,7 +4,7 @@ title: "Hvilken er den nyeste versjonen av lisensene som tilbys av Creative Comm
 description: ""
 slug: "which-is-the-latest-version"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

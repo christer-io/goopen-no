@@ -4,7 +4,7 @@ title: "Hvorfor er åpen kildekode-AI viktig, og hvordan hjelper det med åpenhe
 description: ""
 slug: "why-is-open-source-ai-important"
 posttype: ["faq"]
-tag: "OpenSourceAI"
+tag: "åpen KI"
 featured: ""
 source: "ObiOne"
 license: "CC-BY-4.0"

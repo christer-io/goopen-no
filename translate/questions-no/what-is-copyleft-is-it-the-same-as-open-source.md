@@ -4,7 +4,7 @@ title: "Hva er \"copyleft\"? Er det det samme som \"åpen kildekode\"?"
 description: ""
 slug: "what-is-copyleft-is-it-the-same-as-open-source"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-NC-4.0"

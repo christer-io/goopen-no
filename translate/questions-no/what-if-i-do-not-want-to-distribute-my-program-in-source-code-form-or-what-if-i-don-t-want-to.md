@@ -4,7 +4,7 @@ title: "Hva om jeg ikke vil distribuere programmet mitt i kildekodeform? Eller h
 description: ""
 slug: "what-if-i-do-not-want-to-distribute-my-program-in-source-code-form-or-what-if-i-don-t-want-to"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-4.0"

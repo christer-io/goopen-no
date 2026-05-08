@@ -4,7 +4,7 @@ title: "Hvem gir tillatelse til å bruke materiale som tilbys under CC-lisenser?
 description: ""
 slug: "who-gives-permission-to-use-material-offered-under-creative-commons-licenses"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

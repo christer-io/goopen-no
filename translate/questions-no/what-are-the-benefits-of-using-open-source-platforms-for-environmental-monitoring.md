@@ -4,7 +4,7 @@ title: "Hva er fordelene med å bruke åpen kildekode-plattformer for miljøover
 description: ""
 slug: "what-are-the-benefits-of-using-open-source-platforms-for-environmental-monitoring"
 posttype: ["faq"]
-tag: ""
+tag: "klima og miljø"
 featured: "yes"
 source: "DigiPlanet"
 license: "CC-BY-4.0"

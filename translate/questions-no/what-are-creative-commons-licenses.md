@@ -4,7 +4,7 @@ title: "Hva er Creative Commons-lisenser og hvorfor bruke dem?"
 description: ""
 slug: "what-are-creative-commons-licenses"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-SA-4.0"

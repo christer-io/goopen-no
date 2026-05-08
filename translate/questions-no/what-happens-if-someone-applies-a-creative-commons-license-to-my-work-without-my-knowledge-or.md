@@ -4,7 +4,7 @@ title: "Hva skjer hvis noen bruker en Creative Commons-lisens på arbeidet mitt 
 description: ""
 slug: "what-happens-if-someone-applies-a-creative-commons-license-to-my-work-without-my-knowledge-or"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

@@ -4,7 +4,7 @@ title: "Hva er forskjellen mellom plagiat og brudd på opphavsrett?"
 description: ""
 slug: "what-is-the-difference-between-plagiarism-and-copyright-infringement-and-what-role-do-cc"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

@@ -4,7 +4,7 @@ title: "Hvilke ting bør jeg tenke på før jeg bruker en Creative Commons-lisen
 description: ""
 slug: "what-things-should-i-think-about-before-i-apply-a-creative-commons-license"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

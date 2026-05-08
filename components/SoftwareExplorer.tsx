@@ -9,6 +9,7 @@ import TextField from "@mui/material/TextField";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { SoftwareCard } from "@/components/SoftwareCard";
+import { getSoftwareCategories } from "@/data/software";
 import type { SoftwareItem } from "@/data/software";
 
 type Props = {
@@ -27,7 +28,7 @@ export function SoftwareExplorer({ software }: Props) {
 
   const categories = useMemo(() => {
     return Array.from(
-      new Set(software.map((item) => item.category).filter(Boolean))
+      new Set(software.flatMap((item) => getSoftwareCategories(item)))
     ).sort((a, b) => a.localeCompare(b, "nb"));
   }, [software]);
 
@@ -35,10 +36,11 @@ export function SoftwareExplorer({ software }: Props) {
     const normalizedQuery = normalize(query);
 
     return software.filter((item) => {
+      const itemCategories = getSoftwareCategories(item);
       const matchesCategory =
-        category === allCategoriesValue || item.category === category;
+        category === allCategoriesValue || itemCategories.includes(category);
       const searchableText = normalize(
-        [item.title, item.description, item.category].join(" ")
+        [item.title, item.description, ...itemCategories].join(" ")
       );
       const matchesQuery =
         !normalizedQuery || searchableText.includes(normalizedQuery);

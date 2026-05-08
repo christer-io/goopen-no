@@ -4,7 +4,7 @@ title: "Hva er hensikten med den åpne definisjonen?"
 description: ""
 slug: "what-is-the-purpose-of-the-open-definition"
 posttype: ["faq"]
-tag: "opendata"
+tag: "åpne data"
 featured: ""
 source: "Open Knowledge Foundation"
 license: "CC-BY-4.0"

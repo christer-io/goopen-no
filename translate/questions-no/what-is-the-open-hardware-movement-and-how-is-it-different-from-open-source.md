@@ -4,7 +4,7 @@ title: "Hva er åpen maskinvarebevegelse, og hvordan er den forskjellig fra åpe
 description: ""
 slug: "what-is-the-open-hardware-movement-and-how-is-it-different-from-open-source"
 posttype: ["faq"]
-tag: "OpenHardware"
+tag: "åpen maskinvare"
 featured: ""
 source: "ObiOne"
 license: "CC-BY-4.0"

@@ -4,7 +4,7 @@ title: "Hva er en \"permissiv\" åpen kildekode-lisens?"
 description: ""
 slug: "what-is-a-permissive-open-source-license"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-NC-SA-4.0"

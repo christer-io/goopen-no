@@ -4,7 +4,7 @@ title: "Hva er \"bidragsyteravtaler\"? Er de som åpen kildekode-lisenser?"
 description: ""
 slug: "what-are-contributor-agreements-are-they-like-open-source-licenses"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-4.0"

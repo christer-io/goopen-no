@@ -4,7 +4,7 @@ title: "Hvorfor er åpne data avgjørende for klimaforskning?"
 description: ""
 slug: "why-is-open-data-essential-for-climate-research"
 posttype: ["faq"]
-tag: ""
+tag: "klima og miljø"
 featured: "yes"
 source: "DigiPlanet"
 license: "CC-BY-4.0"

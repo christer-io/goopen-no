@@ -4,7 +4,7 @@ title: "Vil Open Database License (ODbL) skape juridisk usikkerhet?"
 description: ""
 slug: "will-the-open-database-license-odbl-create-legal-uncertainty"
 posttype: ["faq"]
-tag: "opendata"
+tag: "åpne data"
 featured: ""
 source: "Open Knowledge foundation"
 license: "CC-BY-4.0"

@@ -4,7 +4,7 @@ title: "Hva er fordelene ved å bruke åpen kildekode-AI-verktøy fremfor propri
 description: ""
 slug: "what-are-the-advantages-of-using-open-source-ai-tools-over-proprietary-ones"
 posttype: ["faq"]
-tag: "OpenSourceAI"
+tag: "åpen KI"
 featured: ""
 source: "ObiOne"
 license: "CC-BY-4.0"

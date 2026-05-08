@@ -3,6 +3,7 @@ export type SoftwareItem = {
   title: string;
   description: string;
   category: string;
+  categories?: string[];
   url: string;
   image?: string;
   tags?: string[];
@@ -11,6 +12,10 @@ export type SoftwareItem = {
     merknad?: string;
   };
 };
+
+export function getSoftwareCategories(item: SoftwareItem) {
+  return Array.from(new Set([item.category, ...(item.categories ?? [])].filter(Boolean)));
+}
 
 export const softwareItems: SoftwareItem[] = [
   {
@@ -1268,6 +1273,7 @@ export const softwareItems: SoftwareItem[] = [
     title: "PyTorch",
     description: "Åpent maskinlæringsrammeverk for forskning og produksjon, kjent for dynamisk beregningsgraf.",
     category: "Infrastruktur og sky",
+    categories: ["Åpen KI"],
     url: "https://pytorch.org/",
     image: "/software-logos/pytorch.svg",
     tags: ["Featured"],
@@ -1278,9 +1284,37 @@ export const softwareItems: SoftwareItem[] = [
     title: "TensorFlow",
     description: "Åpent rammeverk for maskinlæring og dyp læring, brukt til trening og utrulling av modeller.",
     category: "Infrastruktur og sky",
+    categories: ["Åpen KI"],
     url: "https://www.tensorflow.org/",
     image: "/software-logos/tensorflow.svg",
     tags: ["Featured"],
+    metadata: { lisens: "Apache-2.0" },
+  },
+  {
+    id: "scikit-learn",
+    title: "scikit-learn",
+    description: "Åpent Python-bibliotek for klassisk maskinlæring, modellvalg, evaluering og dataanalyse.",
+    category: "Utviklerverktøy",
+    categories: ["Åpen KI"],
+    url: "https://scikit-learn.org/",
+    metadata: { lisens: "BSD-3-Clause" },
+  },
+  {
+    id: "keras",
+    title: "Keras",
+    description: "Åpent Python-bibliotek og API for dyp læring, brukt til å bygge og trene nevrale nettverk.",
+    category: "Utviklerverktøy",
+    categories: ["Åpen KI"],
+    url: "https://keras.io/",
+    metadata: { lisens: "Apache-2.0" },
+  },
+  {
+    id: "apache-mxnet",
+    title: "Apache MXNet",
+    description: "Åpent rammeverk for dyp læring med støtte for fleksibel modellbygging og distribuert trening.",
+    category: "Utviklerverktøy",
+    categories: ["Åpen KI"],
+    url: "https://mxnet.apache.org/",
     metadata: { lisens: "Apache-2.0" },
   },
 ];

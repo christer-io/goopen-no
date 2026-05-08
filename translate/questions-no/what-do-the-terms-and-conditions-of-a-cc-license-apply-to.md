@@ -4,7 +4,7 @@ title: "Hva gjelder vilkårene og betingelsene for en CC-lisens?"
 description: ""
 slug: "what-do-the-terms-and-conditions-of-a-cc-license-apply-to"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

@@ -1,10 +1,10 @@
 ---
 id: "ffda14a8-5c9e-4519-98f8-4bc3f3a56e56"
-title: "Hvorfor skal man skille mellom databasen og dens "innhold" med hensyn til lisens?"
+title: 'Hvorfor skal man skille mellom databasen og dens "innhold" med hensyn til lisens?'
 description: ""
 slug: "why-should-one-distinguish-between-the-database-and-its-contents-with-regards-to-license"
 posttype: ["faq"]
-tag: "opendata"
+tag: "åpne data"
 featured: ""
 source: "Open Knowledge Foundation"
 license: "CC-BY-SA-4.0"

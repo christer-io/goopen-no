@@ -4,7 +4,7 @@ title: "Hva er åpne data?"
 description: ""
 slug: "what-is-open-data"
 posttype: ["faq"]
-tag: "opendata"
+tag: "åpne data"
 featured: ""
 source: "Open Knowledge Foundation"
 license: "CC-BY-4.0"

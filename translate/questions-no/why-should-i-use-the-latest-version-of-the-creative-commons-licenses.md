@@ -4,7 +4,7 @@ title: "Hvorfor bør jeg bruke den nyeste versjonen av Creative Commons-lisensen
 description: ""
 slug: "why-should-i-use-the-latest-version-of-the-creative-commons-licenses"
 posttype: ["faq"]
-tag: "opencontent"
+tag: "åpent innhold"
 featured: ""
 source: "Creative Commons"
 license: "CC-BY-4.0"

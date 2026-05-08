@@ -4,7 +4,7 @@ title: "Programvare utgitt under \"CC Zero\" - Er det åpen kildekode?"
 description: ""
 slug: "software-released-under-creative-commons-cc0-cc-zero-public-domain-dedication-is-that-open"
 posttype: ["faq"]
-tag: "opensource"
+tag: "åpen kildekode"
 featured: ""
 source: "Open Source Initiative"
 license: "CC-BY-4.0"

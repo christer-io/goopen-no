@@ -1,11 +1,9 @@
-import Link from 'next/link';
-import { SimpleCard } from "@/components/SimpleCard";
 import { fetchFAQ } from "@/app/actions";
-
 import { SectionHeader } from "@/components/SectionHeader";
 import { Header } from "@/components/Header";
 import { Footer } from '@/components/Footer';
 import { BannerSmall } from '@/components/BannerSmall';
+import { FaqExplorer } from "@/components/FaqExplorer";
 
 export default async function Faq() {
 
@@ -19,17 +17,8 @@ export default async function Faq() {
           <Header />
         
       <div className="mx-auto bg-white max-w-7xl pb-7 pt-10">
-       <SectionHeader title="Ofte spurte spørsmål" subTitle="Kom igang med Creative Commons"/>
-          <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-3 p-2 md:pb-3 "> 
-                {faq.map((faqa) => (
-                    <div key={faqa._id} className="space-y-2">
-                      <Link href={`/post/${faqa.slug.current}`} className="block h-full">
-                        <SimpleCard title={faqa.title} url="" description="" tag="FAQ" bg="bg-white" text="text-emerald-950"/>
-                      </Link>
-                      
-                    </div>
-                ))}
-          </div>
+       <SectionHeader title="Ofte spurte spørsmål" subTitle="Kom igang med Åpen kildekode og Creative Commons"/>
+          <FaqExplorer faq={faq} />
         </div>  
           <BannerSmall textPart1="Åpne lisenser" textPart2="bidrar til" textPart3="trygg deling!" />
         </div>          
