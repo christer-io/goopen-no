@@ -11,7 +11,23 @@ source: ""
 license: "CC BY-SA 4.0"
 ---
 
-## Programvare er kildekode
+
+![Spisested med neonskiltet «Open 24 Hrs»](/images/spisested-apent-24-timer-kulla-owaki.jpeg)
+*«Spisested - åpent 24 timer». Foto: Kulla Owaki. Rettighetshaver: Corbis / NTB scanpix. Kilde: [Scanpix](http://www.scanpix.no). Lisens: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.no).*
+
+## Hva er åpen kildekode?
+Begrepet *open source*, eller åpen kildekode på norsk, henviser til programvare man kan endre og dele fordi utformingen og kildekoden er fritt tilgjengelig.
+
+Begrepet oppstod i forbindelse med programvareutvikling, som en bestemt måte å lage dataprogrammer på. På 1990 tallet ble denne måte å utvikle programvare på omtalt som Free software. Idag er Open Source, det mest vanlige begrepet å bruke på Engelsk. Åpen kildekode og fri programvare er begreper på norsk som dekker dette fagområdet. 
+
+I dag brukes open source også om et bredere sett med verdier og arbeidsformer. Prosjekter, produkter og initiativer som bygger på open source legger vekt på åpen utveksling, samarbeid, rask utprøving, transparens, meritokrati og fellesskapsorientert utvikling. Når man referer til åpne data, eller åpne digitale læringsressurser, så er disse utviklet basert på de samme grunnleggende prinsippene. 
+
+## Hva er programvare med åpen kildekode?
+
+Programvare med åpen kildekode er programvare der kildekoden kan leses, endres og forbedres av andre.
+
+Kildekode er den delen av programvaren de fleste vanlige brukere aldri ser. Det er koden utviklere kan arbeide med for å endre hvordan et program eller en applikasjon fungerer. Når utviklere får tilgang til kildekoden, kan de forbedre programmet ved å legge til funksjoner eller rette feil.
+
 Programvare, eller kildekode er åndsverk og beskyttet av opphavsrett på samme måte som et kunstverk eller et bilde. Som skaper av programvaren bestemmer du hvilke betingelser, altså hvilken lisens, som skal gjelde for andres bruk av din kode eller programvare.
 
 ## Lisensiering av programvare
@@ -20,22 +36,6 @@ Programvare, eller kildekode er åndsverk og beskyttet av opphavsrett på samme 
 Åndsverkloven definerer grunnreglene som gjelder for alle åndsverk. Dette fundamentet kan vi så tilpasse ved hjelp av lisenser og sluttbrukerlisens.
 
 Lisenser kan være mer åpne eller mer lukkede. Noen lisenser gir kun en begrenset tilgang til å bruke programvaren. Slike restriktive lisenser brukes ofte på proprietær programvare. Andre lisenser kan være mer åpne og tillate at andre gjør forandringer, lager kopier, lager sine egne varianter og bruker koden i sine egne prosjekter. Det er også mulig å gi bort alle rettighetene sine slik at koden i praksis blir allemannseie og fritt kan brukes av hvem som helst og til hva som helst.
-
-![Spisested med neonskiltet «Open 24 Hrs»](/images/spisested-apent-24-timer-kulla-owaki.jpeg)
-*«Spisested - åpent 24 timer». Foto: Kulla Owaki. Rettighetshaver: Corbis / NTB scanpix. Kilde: [Scanpix](http://www.scanpix.no). Lisens: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.no).*
-
-## Hva er åpen kildekode?
-Begrepet *open source*, eller åpen kildekode på norsk, henviser til programvare man kan endre og dele fordi utformingen er fritt tilgjengelig.
-
-Begrepet oppstod i forbindelse med programvareutvikling, som en bestemt måte å lage dataprogrammer på. På 1990 tallet ble denne måte å utvikle programvare på omtalt som Free software. Idag er Open Source, det mest vanlige begrepet å bruke på Engelsk. Åpen kildekode og fri programvare er begreper på norsk som dekker dette fagområdet. 
-
-I dag brukes open source også om et bredere sett med verdier og arbeidsformer. Prosjekter, produkter og initiativer som bygger på open source legger vekt på åpen utveksling, samarbeid, rask utprøving, transparens, meritokrati og fellesskapsorientert utvikling.
-
-## Hva er programvare med åpen kildekode?
-
-Programvare med åpen kildekode er programvare der kildekoden kan leses, endres og forbedres av andre.
-
-Kildekode er den delen av programvaren de fleste vanlige brukere aldri ser. Det er koden utviklere kan arbeide med for å endre hvordan et program eller en applikasjon fungerer. Når utviklere får tilgang til kildekoden, kan de forbedre programmet ved å legge til funksjoner eller rette feil.
 
 ## Hva er forskjellen på åpen og lukket programvare?
 
@@ -47,15 +47,15 @@ Programvare med åpen kildekode fungerer annerledes. Her gjør utviklerne kildek
 
 Også åpen programvare brukes under lisensvilkår. Forskjellen er at åpne lisenser gir brukere langt større frihet enn proprietære lisenser. Åpne lisenser regulerer hvordan programvaren kan brukes, studeres, endres og distribueres.
 
-Mange åpne lisenser gir brukeren rett til å bruke programvaren til hvilket som helst formål. Noen lisenser, ofte kalt *copyleft*-lisenser, krever at den som distribuerer en endret versjon også deler kildekoden til den endrede versjonen. Andre åpne lisenser krever at den som endrer og deler programmet videre også gjør kildekoden tilgjengelig uten å kreve lisensavgift for den.
+Mange åpne lisenser gir brukeren rett til å bruke programvaren til hvilket som helst formål. Noen lisenser, ofte kalt *copyleft*-lisenser, krever at den som distribuerer en endret versjon også deler kildekoden til den endrede versjonen. 
 
-Hensikten med åpne programvarelisenser er å fremme samarbeid og deling. De gjør det mulig for andre å forbedre kildekoden og bruke forbedringene i egne prosjekter, så lenge de følger lisensvilkårene.
+Hensikten med åpne programvarelisenser er å fremme samarbeid, gjenbruk og deling. De gjør det mulig for andre å forbedre kildekoden og bruke forbedringene i egne prosjekter, så lenge de følger lisensvilkårene.
 
 ## Er åpen kildekode bare viktig for programmerere?
 
 Nei. Både åpen teknologi og tankesettet bak open source er nyttig for programmerere og ikke-programmerere.
 
-Mye av internett bygger på åpen teknologi, for eksempel Linux og Apache Web Server. Alle som bruker internett i dag nyter derfor godt av åpen kildekode, også uten å tenke over det.
+Mye av internett bygger på åpen teknologi, for eksempel Linux, Kubernetes og Apache Web Server. Alle som bruker internett i dag nyter derfor godt av åpen kildekode, også uten å tenke over det.
 
 Når vi besøker nettsider, sender e-post, chatter, strømmer musikk eller spiller nettspill, kobles enhetene våre til store nettverk av datamaskiner. Mange av systemene som sender og behandler data i bakgrunnen bruker åpen programvare.
 
